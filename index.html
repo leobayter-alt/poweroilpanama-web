@@ -177,6 +177,11 @@ h2 { font-size: clamp(2rem, 4.4vw, 3.4rem); font-weight: 750; line-height: 1.02;
 .route.m-only { display: none; }
 @media (max-width: 720px) { .route.m-only { display: grid; } .pmap .lbl, .pmap .sea { display: none; } }
 
+/* Galería de operación */
+.ops { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+.ops .photo { aspect-ratio: 1 / 1; }
+@media (max-width: 720px) { .ops { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } .ops .photo figcaption { font-size: .72rem; } }
+
 /* Quiénes somos */
 .about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
 .about-photos { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 14px; }
@@ -298,6 +303,18 @@ footer { border-top: 1px solid var(--rule); background: var(--paper-2); }
   .brand-txt span { display: none; }
   .nav .btn.sm { display: none; }
 }
+/* Fotos a la altura del texto (sin espacios vacíos) */
+@media (min-width: 961px) {
+  .about { align-items: stretch; }
+  .about-photos { align-items: stretch; }
+  .about-photos .photo:first-child { aspect-ratio: auto; min-height: 440px; }
+  .about-photos .col { grid-template-rows: minmax(150px, auto) 1fr; align-content: stretch; }
+  .about-photos .col .yr { aspect-ratio: auto; }
+  .about-photos .col .photo { aspect-ratio: auto; min-height: 220px; }
+  .why { align-items: stretch; }
+  .why-photo { position: relative; top: 0; aspect-ratio: auto; min-height: 480px; }
+}
+
 </style>
 
 <nav class="nav" aria-label="Principal">
@@ -394,10 +411,10 @@ footer { border-top: 1px solid var(--rule); background: var(--paper-2); }
   <section class="pad">
     <div class="in about">
       <div class="about-photos">
-        <figure class="photo"><img src="img/operacion.jpg" alt="Operación de Power Oil Panamá en bodega" loading="lazy"><figcaption data-en="Our operation">Nuestra operación</figcaption></figure>
+        <figure class="photo"><img src="img/van-flota.jpg" alt="Vehículo de reparto de Power Oil rotulado con Lucas Oil, Hot Shot’s Secret y ATP" loading="lazy" style="object-position:22% 50%"><figcaption data-en="Our own fleet">Flota propia</figcaption></figure>
         <div class="col">
           <div class="yr"><small data-en="Operating since">Operando desde</small><b>2014</b></div>
-          <figure class="photo"><img src="img/campo.jpg" alt="Producto Lucas Oil en uso en el campo" loading="lazy" style="object-position:30% 50%"><figcaption data-en="In the field">En campo</figcaption></figure>
+          <figure class="photo"><img src="img/van-carga.jpg" alt="Vehículo cargado con cajas de Lucas Oil y ATP" loading="lazy" style="object-position:50% 60%"><figcaption data-en="Loaded for the route">Lista para la ruta</figcaption></figure>
         </div>
       </div>
       <div>
@@ -498,13 +515,21 @@ footer { border-top: 1px solid var(--rule); background: var(--paper-2); }
         <div class="fq g"><span class="n">2–3×</span><div><b data-en="Capital and surroundings">Capital y alrededores</b><span data-en="Deliveries every week">Entregas por semana</span></div></div>
         <div class="fq"><span class="n">1×</span><div><b data-en="Interior of the country">Interior del país</b><span data-en="Delivery every week">Entrega por semana</span></div></div>
       </div>
+      <div class="ops">
+        <figure class="photo"><img src="img/vans-reparto.jpg" alt="Vehículos de reparto de Power Oil" loading="lazy" style="object-position:50% 50%"><figcaption data-en="Delivery fleet">Flota de reparto</figcaption></figure>
+        <figure class="photo"><img src="img/van-noche.jpg" alt="Vehículo de Power Oil en ruta de noche" loading="lazy" style="object-position:50% 55%"><figcaption data-en="Deliveries to the interior">Entregas al interior</figcaption></figure>
+        <figure class="photo"><img src="img/bodega.jpg" alt="Bodega con productos Lucas Oil y Paradise Air" loading="lazy" style="object-position:50% 55%"><figcaption data-en="Warehouse in Panama">Bodega en Panamá</figcaption></figure>
+        <figure class="photo"><img src="img/camion-cliente.jpg" alt="Productos Lucas Oil CK-4 junto a un camión de flota" loading="lazy" style="object-position:50% 80%"><figcaption data-en="Fleets we supply">Flotas que abastecemos</figcaption></figure>
+        <figure class="photo"><img src="img/operacion.jpg" alt="Equipo de Power Oil con producto Lucas" loading="lazy" style="object-position:50% 30%"><figcaption data-en="Our team">Nuestro equipo</figcaption></figure>
+        <figure class="photo"><img src="img/cliente.jpg" alt="Tienda cliente con producto Lucas Oil" loading="lazy" style="object-position:50% 45%"><figcaption data-en="Stores selling our brands">Tiendas que venden nuestras marcas</figcaption></figure>
+      </div>
     </div>
   </section>
 
   <!-- POR QUÉ -->
   <section class="pad">
     <div class="in why">
-      <figure class="photo why-photo"><img src="img/cliente.jpg" alt="Cliente de Power Oil con un producto Lucas frente a su tienda" loading="lazy"><figcaption data-en="Our customers">Nuestros clientes</figcaption></figure>
+      <figure class="photo why-photo"><img src="img/contenedor.jpg" alt="Contenedor con paletas de productos Lucas Oil" loading="lazy"><figcaption data-en="Direct import">Importación directa</figcaption></figure>
       <div>
         <p class="kick"><em>05</em><span data-en="Why Power Oil">Por qué Power Oil</span></p>
         <h2 data-en="A distribution partner that already delivers.">Un socio de distribución que ya cumple.</h2>
