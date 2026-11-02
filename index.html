@@ -1,0 +1,603 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Power Oil Panamá</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Power Oil Panamá distribuye Lucas Oil, Hot Shot’s Secret, ATP Automotive y Paradise en todo Panamá. Socio de distribución para nuevas marcas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Michroma&display=swap">
+<style>
+/* Concepto: ficha técnica de ingeniería en papel blanco. Mucho aire, reglas finas, numeración de secciones, el dorado de marca como relleno y el negro como tinta. Un solo gesto grande: la gota dorada con instrumentación alrededor. Tema claro por decisión de marca. */
+:root {
+  --paper: #ffffff;
+  --paper-2: #f6f5f1;
+  --paper-3: #eeece6;
+  --ink: #121212;
+  --ink-2: #4a4846;
+  --ink-3: #6f6c68;
+  --rule: #e2dfd8;
+  --rule-2: #cfcbc2;
+  --gold: #f7cd45;
+  --gold-2: #edc66e;
+  --amber: #d28f25;
+  --gold-ink: #85570a;
+  --gold-rgb: 247 205 69;
+  --ink-rgb: 18 18 18;
+  --f-display: 'Archivo', system-ui, sans-serif;
+  --f-tech: 'Michroma', 'Archivo', system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--f-display); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+a { color: inherit; }
+p { margin: 0; }
+h1, h2, h3 { margin: 0; font-family: var(--f-display); font-stretch: 112%; text-wrap: balance; }
+section { scroll-margin-top: 80px; }
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+::selection { background: var(--gold); color: var(--ink); }
+.in { max-width: 1200px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.pad { padding-block: clamp(64px, 9vw, 120px); }
+.tech { font-family: var(--f-tech); font-weight: 400; letter-spacing: .08em; text-transform: uppercase; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+/* Navegación */
+.nav { position: fixed; inset: 0 0 auto 0; z-index: 50; padding-top: env(safe-area-inset-top, 0px); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); background: rgb(255 255 255 / .82); -webkit-backdrop-filter: saturate(1.4) blur(14px); backdrop-filter: saturate(1.4) blur(14px); border-bottom: 1px solid var(--rule); }
+.nav-in { max-width: 1200px; margin: 0 auto; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; white-space: nowrap; }
+.brand-mark { width: 30px; height: 30px; flex: none; }
+.brand-txt { display: grid; line-height: 1; }
+.brand-txt b { font: 400 .95rem/1 var(--f-tech); letter-spacing: .1em; }
+.brand-txt span { font: 600 .62rem/1 var(--f-display); letter-spacing: .42em; color: var(--gold-ink); margin-top: 5px; }
+.links { display: flex; gap: 30px; }
+.links a { text-decoration: none; font-size: .9rem; font-weight: 500; color: var(--ink-2); padding: 10px 0; position: relative; }
+.links a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 4px; height: 2px; background: var(--gold); transition: right .2s; }
+.links a:hover { color: var(--ink); }
+.links a:hover::after { right: 0; }
+.nav-act { display: flex; align-items: center; gap: 10px; }
+.lang { display: inline-flex; border: 1px solid var(--rule-2); border-radius: 999px; padding: 3px; }
+.lang button { font: 600 .74rem/1 var(--f-display); letter-spacing: .08em; height: 32px; padding: 0 12px; border: 0; border-radius: 999px; background: transparent; color: var(--ink-3); cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+
+/* Botones */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; text-decoration: none; font: 600 .95rem/1 var(--f-display); border: 1px solid var(--ink); background: var(--ink); color: #fff; cursor: pointer; transition: transform .15s, background .15s, color .15s; }
+.btn:hover { transform: translateY(-1px); background: #000; }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn.gold { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+.btn.gold:hover { background: var(--gold-2); }
+.btn.line { background: transparent; color: var(--ink); border-color: var(--rule-2); }
+.btn.line:hover { border-color: var(--ink); }
+.btn.sm { min-height: 40px; padding: 0 16px; font-size: .84rem; }
+
+/* Encabezados de sección */
+.kick { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; font: 400 .7rem/1 var(--f-tech); letter-spacing: .14em; text-transform: uppercase; color: var(--gold-ink); }
+.kick em { font-style: normal; color: var(--ink); }
+.kick::after { content: ""; flex: 0 1 64px; height: 1px; background: var(--rule-2); }
+h2 { font-size: clamp(2rem, 4.4vw, 3.4rem); font-weight: 750; line-height: 1.02; letter-spacing: -.025em; }
+.lead { color: var(--ink-2); font-size: 1.1rem; max-width: 58ch; margin-top: 18px; }
+.sec-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 32px; align-items: end; }
+
+/* Portada */
+.hero { position: relative; padding-top: calc(68px + clamp(40px, 7vw, 96px)); padding-bottom: clamp(40px, 6vw, 72px); overflow: hidden; isolation: isolate; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background-image: linear-gradient(var(--rule) 1px, transparent 1px), linear-gradient(90deg, var(--rule) 1px, transparent 1px); background-size: 56px 56px; opacity: .55; -webkit-mask-image: radial-gradient(60% 70% at 75% 40%, #000, transparent 75%); mask-image: radial-gradient(60% 70% at 75% 40%, #000, transparent 75%); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(24px, 4vw, 64px); align-items: center; }
+.badge { display: inline-flex; align-items: center; gap: 10px; padding: 7px 14px 7px 8px; border: 1px solid var(--rule-2); border-radius: 999px; font-size: .85rem; font-weight: 500; color: var(--ink-2); background: #fff; margin-bottom: 28px; }
+.badge i { display: inline-grid; place-items: center; height: 24px; padding: 0 10px; border-radius: 999px; background: var(--gold); color: var(--ink); font: 400 .62rem/1 var(--f-tech); letter-spacing: .1em; font-style: normal; }
+.hero h1 { font-size: clamp(2.6rem, 6.6vw, 5.4rem); font-weight: 800; line-height: .98; letter-spacing: -.035em; }
+.hero h1 .hl { position: relative; display: inline; background: linear-gradient(transparent 62%, rgb(var(--gold-rgb) / .85) 62%, rgb(var(--gold-rgb) / .85) 92%, transparent 92%); }
+.hero .lead { margin-top: 26px; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+
+.viz { position: relative; aspect-ratio: 1 / 1; max-width: 560px; width: 100%; justify-self: center; }
+.viz svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.spin { transform-box: fill-box; transform-origin: center; animation: spin 60s linear infinite; }
+.spin.rev { animation-duration: 90s; animation-direction: reverse; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.float { animation: bob 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes bob { 50% { transform: translateY(-8px); } }
+.tag { position: absolute; display: grid; gap: 3px; padding: 12px 14px; background: rgb(255 255 255 / .92); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border: 1px solid var(--rule); border-radius: 12px; box-shadow: 0 14px 40px -18px rgb(var(--ink-rgb) / .35); min-width: 0; }
+.tag small { font: 400 .58rem/1 var(--f-tech); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.tag b { font-size: 1.05rem; font-weight: 700; line-height: 1.15; }
+.tag.t1 { top: 9%; left: -2%; }
+.tag.t2 { top: 44%; right: -3%; }
+.tag.t3 { bottom: 7%; left: 6%; }
+
+/* Cifras */
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: clamp(48px, 7vw, 88px); border-top: 1px solid var(--ink); }
+.stat { padding: 22px 20px 0 0; min-width: 0; }
+.stat + .stat { padding-left: 20px; border-left: 1px solid var(--rule); }
+.num { display: block; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800; font-stretch: 112%; line-height: 1; letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
+.num sup { font-size: .45em; color: var(--amber); vertical-align: .9em; margin-left: 2px; }
+.stat .l { display: block; margin-top: 10px; color: var(--ink-3); font-size: .95rem; line-height: 1.35; }
+
+/* Marcas */
+.brands { background: var(--paper-2); border-block: 1px solid var(--rule); overflow: hidden; }
+.brands-in { display: flex; align-items: center; gap: 28px; }
+.brands-lbl { flex: none; padding-block: 26px; font: 400 .64rem/1.4 var(--f-tech); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); max-width: 13ch; }
+.marq { flex: 1; min-width: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.track { display: flex; width: max-content; animation: slide 36s linear infinite; }
+.track span { display: inline-flex; align-items: center; gap: 56px; padding-right: 56px; white-space: nowrap; font-size: clamp(1.3rem, 2.6vw, 1.9rem); font-weight: 750; font-stretch: 118%; letter-spacing: -.01em; color: var(--ink); }
+.track span::after { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--gold); }
+@keyframes slide { to { transform: translateX(-50%); } }
+
+/* Espacios de foto (reemplazar .ph por <img src="..." alt="..."> cuando lleguen las fotos reales) */
+.photo { position: relative; margin: 0; overflow: hidden; border-radius: 18px; background: var(--paper-3); isolation: isolate; }
+.photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ph { position: absolute; inset: 0; background:
+  radial-gradient(90% 70% at 80% 10%, rgb(var(--gold-rgb) / .35), transparent 60%),
+  repeating-linear-gradient(135deg, transparent 0 14px, rgb(var(--ink-rgb) / .035) 14px 15px),
+  linear-gradient(160deg, #f3f1ec, #e6e3dc); }
+.ph svg { position: absolute; left: 50%; top: 46%; width: 30%; max-width: 120px; transform: translate(-50%, -50%); stroke: rgb(var(--ink-rgb) / .22); fill: none; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+.photo figcaption { position: absolute; left: 14px; bottom: 14px; z-index: 2; display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: rgb(255 255 255 / .9); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); font-size: .8rem; font-weight: 600; max-width: calc(100% - 28px); }
+.photo figcaption::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); flex: none; }
+
+/* Fotos reales */
+.brand-logo { height: 36px; width: auto; display: block; }
+.prod .photo { background: #fff; }
+.photo .pk { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 14px 10px; }
+.photo .pk img { position: static; width: auto; height: 100%; max-width: 46%; object-fit: contain; }
+.gal-sec { padding-block: clamp(40px, 6vw, 72px) 0; }
+.gal { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.gal .photo { aspect-ratio: 3 / 4; }
+@media (max-width: 720px) { .gal { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Marcas */
+.logos-lbl { flex: none; padding-block: 26px; font: 400 .64rem/1.4 var(--f-tech); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); max-width: 15ch; }
+.logos { flex: 1; min-width: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; padding-block: 18px; }
+.lt { height: 84px; display: grid; place-items: center; padding: 12px 16px; background: #fff; border: 1px solid var(--rule); border-radius: 14px; }
+.lt img { max-width: 100%; max-height: 52px; width: auto; height: auto; object-fit: contain; display: block; }
+.prods.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.prods.two .prod .photo { aspect-ratio: 16 / 10; }
+.photo .pk.five { gap: 6px; padding-inline: 8px; }
+.photo .pk.five img { max-width: 19%; }
+.blogo { height: 34px; width: auto; max-width: 160px; object-fit: contain; object-position: left center; display: block; margin-bottom: 4px; }
+@media (max-width: 960px) { .brands-in { flex-direction: column; align-items: stretch; gap: 0; } .logos-lbl { max-width: none; padding-bottom: 0; } }
+@media (max-width: 720px) { .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); } .prods.two { grid-template-columns: minmax(0, 1fr); } }
+
+/* Quiénes somos */
+.about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.about-photos { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 14px; }
+.about-photos .photo:first-child { aspect-ratio: 3 / 4; }
+.about-photos .col { display: grid; gap: 14px; align-content: end; }
+.about-photos .col .photo { aspect-ratio: 1 / 1; }
+.yr { border-radius: 18px; background: var(--ink); color: #fff; padding: 20px; aspect-ratio: 1 / 1; display: flex; flex-direction: column; justify-content: space-between; }
+.yr small { font: 400 .58rem/1.4 var(--f-tech); letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+.yr b { font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 800; font-stretch: 115%; line-height: 1; letter-spacing: -.03em; }
+.body { color: var(--ink-2); margin-top: 18px; }
+.checks { list-style: none; padding: 0; margin: 30px 0 0; border-top: 1px solid var(--rule); }
+.checks li { display: flex; gap: 14px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--rule); font-weight: 500; }
+.checks svg { width: 22px; height: 22px; flex: none; }
+
+/* Productos */
+.prods { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 52px; }
+.prod { display: flex; flex-direction: column; border: 1px solid var(--rule); border-radius: 20px; background: #fff; overflow: hidden; min-width: 0; transition: transform .2s, box-shadow .2s, border-color .2s; }
+.prod:hover { transform: translateY(-4px); border-color: var(--rule-2); box-shadow: 0 24px 50px -28px rgb(var(--ink-rgb) / .35); }
+.prod .photo { border-radius: 0; aspect-ratio: 16 / 10; }
+.prod-b { padding: 22px 22px 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.prod-n { font: 400 .62rem/1 var(--f-tech); letter-spacing: .14em; color: var(--gold-ink); }
+.prod h3 { font-size: 1.3rem; font-weight: 750; letter-spacing: -.01em; line-height: 1.15; }
+.prod p { color: var(--ink-2); font-size: .97rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 10px; }
+.chip { font-size: .76rem; font-weight: 600; padding: 6px 10px; border-radius: 999px; background: var(--paper-2); border: 1px solid var(--rule); color: var(--ink-2); }
+
+/* A quién servimos */
+.serve { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 52px; border-top: 1px solid var(--ink); }
+.serve article { padding: 30px 28px 8px 0; min-width: 0; }
+.serve article + article { padding-left: 28px; border-left: 1px solid var(--rule); }
+.serve .big { font-size: 4.2rem; font-weight: 800; font-stretch: 120%; line-height: 1; letter-spacing: -.05em; color: transparent; -webkit-text-stroke: 1.5px var(--amber); }
+.serve h3 { font-size: 1.4rem; font-weight: 750; margin-top: 22px; }
+.serve p { color: var(--ink-2); margin-top: 10px; }
+
+/* Cobertura: línea de ruta oeste a este */
+.cover { background: var(--paper-2); border-block: 1px solid var(--rule); }
+.route { position: relative; display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); margin-top: 64px; }
+.route::before { content: ""; position: absolute; left: 6.25%; right: 6.25%; top: 21px; height: 2px; background: repeating-linear-gradient(90deg, var(--rule-2) 0 8px, transparent 8px 14px); }
+.route::after { content: ""; position: absolute; left: 68.75%; right: 18.75%; top: 20px; height: 4px; border-radius: 4px; background: var(--gold); }
+.stop { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; min-width: 0; padding-inline: 4px; }
+.dot { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: #fff; border: 2px solid var(--rule-2); }
+.dot::after { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--ink-3); }
+.stop.cap .dot { border-color: var(--gold); box-shadow: 0 0 0 6px rgb(var(--gold-rgb) / .25); }
+.stop.cap .dot::after { background: var(--amber); }
+.stop b { font-size: .98rem; font-weight: 700; line-height: 1.2; overflow-wrap: anywhere; }
+.stop small { font-size: .8rem; color: var(--ink-3); }
+.freq { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 56px; }
+.fq { display: flex; align-items: center; gap: 20px; padding: 24px 26px; border-radius: 18px; background: #fff; border: 1px solid var(--rule); min-width: 0; }
+.fq .n { font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 800; font-stretch: 115%; letter-spacing: -.04em; line-height: 1; white-space: nowrap; }
+.fq.g { background: var(--gold); border-color: var(--gold); }
+.fq b { display: block; font-size: 1.05rem; }
+.fq span { color: var(--ink-2); font-size: .95rem; }
+.fq.g span { color: var(--ink); }
+
+/* Por qué */
+.why { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+.why-photo { position: sticky; top: 100px; aspect-ratio: 4 / 5; }
+.mods { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin-top: 40px; border-top: 1px solid var(--rule); }
+.mod { padding: 28px 24px 28px 0; border-bottom: 1px solid var(--rule); min-width: 0; }
+.mod:nth-child(2n) { padding-left: 24px; border-left: 1px solid var(--rule); }
+.ico { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: rgb(var(--gold-rgb) / .28); }
+.ico svg { width: 24px; height: 24px; stroke: var(--ink); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.mod h3 { font-size: 1.15rem; font-weight: 750; margin-top: 18px; }
+.mod p { color: var(--ink-2); font-size: .97rem; margin-top: 6px; }
+
+/* Autocross */
+.race { background: var(--gold); position: relative; overflow: hidden; isolation: isolate; }
+.race::before { content: ""; position: absolute; inset: 0; z-index: -1; background: repeating-linear-gradient(-55deg, transparent 0 34px, rgb(var(--ink-rgb) / .045) 34px 36px); }
+.race-in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.race .kick { color: var(--ink); }
+.race .kick::after { background: rgb(var(--ink-rgb) / .3); }
+.race p.lead { color: rgb(var(--ink-rgb) / .8); }
+.race-yr { font-size: clamp(5rem, 15vw, 12rem); font-weight: 900; font-stretch: 125%; line-height: .82; letter-spacing: -.06em; color: transparent; -webkit-text-stroke: 2px var(--ink); margin-top: 22px; }
+.race .photo { aspect-ratio: 4 / 3; background: rgb(255 255 255 / .35); }
+.race .ph { background: repeating-linear-gradient(135deg, transparent 0 14px, rgb(var(--ink-rgb) / .05) 14px 15px), linear-gradient(160deg, rgb(255 255 255 / .55), rgb(255 255 255 / .2)); }
+
+/* Contacto */
+.contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+.card { border: 1px solid var(--rule); border-radius: 22px; overflow: hidden; background: #fff; box-shadow: 0 30px 60px -40px rgb(var(--ink-rgb) / .4); }
+.row { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 20px 24px; border-bottom: 1px solid var(--rule); }
+.row:last-child { border-bottom: 0; }
+.row .k { font: 400 .6rem/1.3 var(--f-tech); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.row .v { font-weight: 600; overflow-wrap: anywhere; }
+.row .v a { text-decoration: none; }
+.row .v a:hover { text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; }
+.row button { font: 600 .78rem/1 var(--f-display); padding: 0 14px; min-height: 36px; border-radius: 999px; border: 1px solid var(--rule-2); background: #fff; color: var(--ink); cursor: pointer; }
+.row button:hover { border-color: var(--ink); }
+
+footer { border-top: 1px solid var(--rule); background: var(--paper-2); }
+.foot { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding-block: 30px 40px; color: var(--ink-3); font-size: .9rem; }
+
+/* Responsive */
+@media (max-width: 960px) {
+  .links { display: none; }
+  .hero-grid, .about, .why, .contact, .race-in, .sec-head { grid-template-columns: minmax(0, 1fr); }
+  .viz { max-width: 440px; }
+  .prods { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .why-photo { position: relative; top: 0; aspect-ratio: 16 / 10; }
+}
+@media (max-width: 720px) {
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stat:nth-child(3) { padding-left: 0; border-left: 0; }
+  .stat:nth-child(n+3) { margin-top: 18px; border-top: 1px solid var(--rule); }
+  .prods, .serve, .mods, .freq { grid-template-columns: minmax(0, 1fr); }
+  .serve article + article { padding-left: 0; border-left: 0; border-top: 1px solid var(--rule); }
+  .mod:nth-child(2n) { padding-left: 0; border-left: 0; }
+  .route { grid-template-columns: minmax(0, 1fr); gap: 0; margin-top: 40px; }
+  .route::before { left: 21px; right: auto; top: 22px; bottom: 22px; width: 2px; height: auto; background: repeating-linear-gradient(180deg, var(--rule-2) 0 8px, transparent 8px 14px); }
+  .route::after { left: 20px; right: auto; top: 68.75%; bottom: 18.75%; width: 4px; height: auto; }
+  .stop { flex-direction: row; text-align: left; gap: 16px; padding: 8px 0; }
+  .stop small { margin-left: auto; }
+  .tag.t1 { left: 0; }
+  .tag.t2 { right: 0; }
+  .row { grid-template-columns: minmax(0, 1fr) auto; }
+  .row .k { grid-column: 1 / -1; }
+  .brands-lbl { display: none; }
+}
+@media (max-width: 420px) {
+  .brand-txt span { display: none; }
+  .nav .btn.sm { display: none; }
+}
+</style>
+
+<nav class="nav" aria-label="Principal">
+  <div class="nav-in">
+    <!-- LOGO: reemplazar el SVG y el texto por el logo oficial (versión para fondo claro) -->
+    <a class="brand" href="#top" aria-label="Power Oil Panamá">
+      <img class="brand-logo" src="img/logo-horizontal.png" alt="Power Oil Panamá" width="141" height="36">
+    </a>
+    <div class="links">
+      <a href="#marcas" data-en="Brands">Marcas</a>
+      <a href="#clientes" data-en="Who we serve">Clientes</a>
+      <a href="#cobertura" data-en="Coverage">Cobertura</a>
+      <a href="#contacto" data-en="Contact">Contacto</a>
+    </div>
+    <div class="nav-act">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn sm wa" href="https://wa.me/50768611905" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <!-- PORTADA -->
+  <section class="hero">
+    <div class="in">
+      <div class="hero-grid">
+        <div>
+          <span class="badge"><i>LUCAS OIL</i><span data-en="Exclusive distributor in Panama">Distribuidor exclusivo en Panamá</span></span>
+          <h1><span data-en="Your next brand partner in">Tu próximo socio de marca en</span> <span class="hl" data-en="Panama">Panamá</span><span>.</span></h1>
+          <p class="lead" data-en="We already distribute Lucas Oil, Hot Shot’s Secret, ATP Automotive and Paradise across Panama, with our own fleet and more than 400 active business customers.">Ya distribuimos Lucas Oil, Hot Shot’s Secret, ATP Automotive y Paradise en todo Panamá, con flota propia y más de 400 clientes activos.</p>
+          <div class="cta">
+            <a class="btn gold wa" href="https://wa.me/50768611905" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 11.9 11.9 0 004.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 001.8-1.3 2.3 2.3 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg><span data-en="Become a brand partner">Sé nuestro socio de marca</span></a>
+            <a class="btn line" href="#marcas" data-en="See our brands">Ver nuestras marcas</a>
+          </div>
+        </div>
+
+        <div class="viz" aria-hidden="true">
+          <svg viewBox="0 0 520 520">
+            <defs>
+              <linearGradient id="gd" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#fbe08a"/>
+                <stop offset=".45" stop-color="#f7cd45"/>
+                <stop offset="1" stop-color="#d28f25"/>
+              </linearGradient>
+              <radialGradient id="halo" cx=".5" cy=".55" r=".5">
+                <stop offset="0" stop-color="#f7cd45" stop-opacity=".35"/>
+                <stop offset="1" stop-color="#f7cd45" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="260" cy="270" r="250" fill="url(#halo)"/>
+            <g class="spin"><circle cx="260" cy="270" r="226" fill="none" stroke="#121212" stroke-opacity=".5" stroke-width="10" stroke-dasharray="1 10.85"/></g>
+            <circle cx="260" cy="270" r="206" fill="none" stroke="#cfcbc2" stroke-width="1"/>
+            <g class="spin rev"><circle cx="260" cy="270" r="186" fill="none" stroke="#d28f25" stroke-width="1.5" stroke-dasharray="120 30 6 30"/></g>
+            <circle cx="260" cy="270" r="150" fill="#fff" stroke="#e2dfd8"/>
+            <path d="M80 270H130M390 270H440M260 90V120M260 420V450" stroke="#121212" stroke-opacity=".35" stroke-width="1.2"/>
+            <g class="float">
+              <path d="M260 150c0 0 82 96 82 152a82 82 0 01-164 0c0-56 82-152 82-152z" fill="url(#gd)" stroke="#121212" stroke-width="2"/>
+              <path d="M222 300c0 26 14 44 34 50" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+              <ellipse cx="236" cy="252" rx="9" ry="16" fill="#fff" opacity=".6" transform="rotate(28 236 252)"/>
+            </g>
+          </svg>
+          <div class="tag t1"><small data-en="Since">Desde</small><b>2014</b></div>
+          <div class="tag t2"><small data-en="Portfolio">Portafolio</small><b data-en="4 brands">4 marcas</b></div>
+          <div class="tag t3"><small data-en="Delivery">Entrega</small><b data-en="8 provinces">8 provincias</b></div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><span class="num">2014</span><span class="l" data-en="Representing Lucas Oil in Panama">Representando a Lucas Oil en Panamá</span></div>
+        <div class="stat"><span class="num"><span data-count="400">400</span><sup>+</sup></span><span class="l" data-en="Active business customers">Clientes activos</span></div>
+        <div class="stat"><span class="num" data-count="8">8</span><span class="l" data-en="Provinces with scheduled delivery">Provincias con entrega programada</span></div>
+        <div class="stat"><span class="num" data-count="4">4</span><span class="l" data-en="Company-owned delivery vehicles">Vehículos de reparto propios</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="brands" id="logos" aria-label="Brands">
+    <div class="in brands-in">
+      <p class="logos-lbl" data-en="Brands we already sell in Panama">Marcas que ya vendemos en Panamá</p>
+      <div class="logos">
+        <div class="lt"><img src="img/logo-lucas.png" alt="Lucas Oil" height="40"></div>
+        <div class="lt"><img src="img/logo-hotshot.png" alt="Hot Shot’s Secret" height="52"></div>
+        <div class="lt"><img src="img/logo-atp.png" alt="ATP Automotive" height="48"></div>
+        <div class="lt"><img src="img/logo-paradise.png" alt="Paradise Air" height="44"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section class="pad">
+    <div class="in about">
+      <div class="about-photos">
+        <figure class="photo"><img src="img/operacion.jpg" alt="Operación de Power Oil Panamá en bodega" loading="lazy"><figcaption data-en="Our operation">Nuestra operación</figcaption></figure>
+        <div class="col">
+          <div class="yr"><small data-en="Operating since">Operando desde</small><b>2014</b></div>
+          <figure class="photo"><img src="img/campo.jpg" alt="Producto Lucas Oil en uso en el campo" loading="lazy" style="object-position:30% 50%"><figcaption data-en="In the field">En campo</figcaption></figure>
+        </div>
+      </div>
+      <div>
+        <p class="kick"><em>01</em><span data-en="Who we are">Quiénes somos</span></p>
+        <h2 data-en="A national operation, with brands the market trusts.">Una operación nacional, con marcas en las que el mercado confía.</h2>
+        <p class="body" data-en="Since 2014 we have represented and developed the Lucas Oil brand in Panama. Today we serve more than 400 active customers among auto parts stores, independent repair shops and transport fleets.">Desde 2014 representamos y desarrollamos la marca Lucas Oil en Panamá. Hoy atendemos a más de 400 clientes activos entre tiendas de repuestos, talleres independientes y flotas de transporte.</p>
+        <p class="body" data-en="We deliver with our own vehicles and keep order and inventory control, so delivery times are met and availability stays reliable.">Distribuimos con vehículos propios y llevamos control de pedidos e inventario, para cumplir los tiempos de entrega y mantener la disponibilidad.</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#f7cd45"/><path d="M7 12.5l3.2 3L17 9" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-en="Exclusive Lucas Oil distributor in Panama">Distribuidor exclusivo de Lucas Oil en Panamá</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#f7cd45"/><path d="M7 12.5l3.2 3L17 9" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-en="Personal attention and fast response">Atención personalizada y respuesta rápida</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#f7cd45"/><path d="M7 12.5l3.2 3L17 9" fill="none" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-en="Scheduled deliveries across the country">Entregas programadas en todo el país</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCAS -->
+  <section id="marcas" class="pad" style="padding-top:0">
+    <div class="in">
+      <div class="sec-head">
+        <div>
+          <p class="kick"><em>02</em><span data-en="Our brands">Nuestras marcas</span></p>
+          <h2 data-en="Four brands already selling across Panama.">Cuatro marcas que ya se venden en todo Panamá.</h2>
+        </div>
+        <p class="lead" data-en="Established brands moving through auto parts stores, repair shops and fleets, with deliveries every week. Yours could be next.">Marcas establecidas que ya se mueven en tiendas de repuestos, talleres y flotas, con entregas cada semana. La tuya puede ser la siguiente.</p>
+      </div>
+      <div class="prods two">
+        <article class="prod">
+          <figure class="photo"><div class="pk five"><img src="img/p-stabilizer.jpg" alt="Lucas Heavy Duty Oil Stabilizer" loading="lazy"><img src="img/p-transmission.jpg" alt="Lucas Transmission Fix" loading="lazy"><img src="img/p-upper.jpg" alt="Lucas Upper Cylinder Lubricant" loading="lazy"><img src="img/p-chainlube.jpg" alt="Lucas Chain Lube" loading="lazy"><img src="img/p-grasa.jpg" alt="Lucas Red N Tacky Grease" loading="lazy"></div></figure>
+          <div class="prod-b"><img class="blogo" src="img/logo-lucas.png" alt="Lucas Oil" height="34"><span class="prod-n">01</span><h3>Lucas Oil</h3><p data-en="Exclusive distributor in Panama since 2014. Oil stabilizers, additives, transmission and steering fluids, greases and lubricants.">Distribuidor exclusivo en Panamá desde 2014. Estabilizadores, aditivos, fluidos de transmisión y dirección, grasas y lubricantes.</p>
+          <div class="chips"><span class="chip" data-en="Exclusive in Panama">Exclusivo en Panamá</span><span class="chip" data-en="Additives">Aditivos</span><span class="chip" data-en="Transmission">Transmisión</span><span class="chip" data-en="Greases">Grasas</span><span class="chip" data-en="Lubricants">Lubricantes</span></div></div>
+        </article>
+<article class="prod">
+          <figure class="photo"><div class="pk "><img src="img/p-hotshot.jpg" alt="Hot Shot’s Secret Everyday Diesel Treatment" loading="lazy"></div></figure>
+          <div class="prod-b"><img class="blogo" src="img/logo-hotshot.png" alt="Hot Shot’s Secret" height="34"><span class="prod-n">02</span><h3>Hot Shot’s Secret</h3><p data-en="Diesel performance treatments for fleets and heavy-duty engines.">Tratamientos de rendimiento para diésel, para flotas y motores de trabajo pesado.</p>
+          <div class="chips"><span class="chip" data-en="Diesel treatment">Tratamiento diésel</span><span class="chip" data-en="Fuel additive">Aditivo de combustible</span><span class="chip" data-en="Fleets">Flotas</span></div></div>
+        </article>
+<article class="prod">
+          <figure class="photo"><div class="pk "><img src="img/p-at205.jpg" alt="ATP AT-205 Re-Seal" loading="lazy"></div></figure>
+          <div class="prod-b"><img class="blogo" src="img/logo-atp.png" alt="ATP Automotive" height="34"><span class="prod-n">03</span><h3>ATP Automotive</h3><p data-en="Sealers that stop leaks in engines, transmissions, power steering and differentials.">Selladores que detienen fugas en motores, transmisiones, dirección hidráulica y diferenciales.</p>
+          <div class="chips"><span class="chip" data-en="Leak stop">Detiene fugas</span><span class="chip" data-en="Re-Seal">Re-Seal</span><span class="chip" data-en="Repair">Reparación</span></div></div>
+        </article>
+<article class="prod">
+          <figure class="photo"><div class="pk "><img src="img/p-paradise.jpg" alt="Línea de ambientadores Paradise Air" loading="lazy"></div></figure>
+          <div class="prod-b"><img class="blogo" src="img/logo-paradise.png" alt="Paradise Air" height="34"><span class="prod-n">04</span><h3>Paradise Air</h3><p data-en="Automotive air fresheners in under-seat, gel and canned formats, in many scents.">Ambientadores para vehículo en formato bajo asiento, gel y lata, en muchos aromas.</p>
+          <div class="chips"><span class="chip" data-en="Under-seat">Bajo asiento</span><span class="chip" data-en="Gel">Gel</span><span class="chip" data-en="Canned">En lata</span><span class="chip" data-en="Many scents">Muchos aromas</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTES -->
+  <section id="clientes" class="pad" style="padding-top:0">
+    <div class="in">
+      <p class="kick"><em>03</em><span data-en="Who we serve">A quién servimos</span></p>
+      <h2 data-en="We only sell to businesses.">Vendemos a negocios.</h2>
+      <div class="serve">
+        <article><div class="big">01</div><h3 data-en="Auto parts stores">Tiendas de repuestos</h3><p data-en="High-turnover additives and lubricants for your shelves, with steady supply.">Aditivos y lubricantes de alta rotación para tus estantes, con abastecimiento constante.</p></article>
+        <article><div class="big">02</div><h3 data-en="Independent repair shops">Talleres independientes</h3><p data-en="Repair and maintenance products you can recommend with confidence.">Productos de reparación y mantenimiento que puedes recomendar con confianza.</p></article>
+        <article><div class="big">03</div><h3 data-en="Fleets and transport">Flotas y transporte</h3><p data-en="Lubricants and additives for trucks, industrial and agricultural equipment, with scheduled delivery.">Lubricantes y aditivos para camiones, maquinaria industrial y agrícola, con entrega programada.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COBERTURA -->
+  <section id="cobertura" class="pad cover">
+    <div class="in">
+      <div class="sec-head">
+        <div>
+          <p class="kick"><em>04</em><span data-en="Coverage">Cobertura</span></p>
+          <h2 data-en="From Chiriquí to Colón, with our own fleet.">De Chiriquí a Colón, con flota propia.</h2>
+        </div>
+        <p class="lead" data-en="Our own vehicles give us direct control over delivery times and service quality.">Con vehículos propios controlamos directamente los tiempos de entrega y la calidad del servicio.</p>
+      </div>
+      <div class="route" role="list">
+        <div class="stop" role="listitem"><span class="dot"></span><b>Chiriquí</b><small data-en="Weekly">Semanal</small></div>
+        <div class="stop" role="listitem"><span class="dot"></span><b>Veraguas</b><small data-en="Weekly">Semanal</small></div>
+        <div class="stop" role="listitem"><span class="dot"></span><b>Herrera</b><small data-en="Weekly">Semanal</small></div>
+        <div class="stop" role="listitem"><span class="dot"></span><b>Los Santos</b><small data-en="Weekly">Semanal</small></div>
+        <div class="stop" role="listitem"><span class="dot"></span><b>Coclé</b><small data-en="Weekly">Semanal</small></div>
+        <div class="stop cap" role="listitem"><span class="dot"></span><b>Panamá Oeste</b><small data-en="2–3× a week">2–3× semana</small></div>
+        <div class="stop cap" role="listitem"><span class="dot"></span><b>Panamá</b><small data-en="2–3× a week">2–3× semana</small></div>
+        <div class="stop" role="listitem"><span class="dot"></span><b>Colón</b><small data-en="Weekly">Semanal</small></div>
+      </div>
+      <div class="freq">
+        <div class="fq g"><span class="n">2–3×</span><div><b data-en="Capital and surroundings">Capital y alrededores</b><span data-en="Deliveries every week">Entregas por semana</span></div></div>
+        <div class="fq"><span class="n">1×</span><div><b data-en="Interior of the country">Interior del país</b><span data-en="Delivery every week">Entrega por semana</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ -->
+  <section class="pad">
+    <div class="in why">
+      <figure class="photo why-photo"><img src="img/cliente.jpg" alt="Cliente de Power Oil con un producto Lucas frente a su tienda" loading="lazy"><figcaption data-en="Our customers">Nuestros clientes</figcaption></figure>
+      <div>
+        <p class="kick"><em>05</em><span data-en="Why Power Oil">Por qué Power Oil</span></p>
+        <h2 data-en="A distribution partner that already delivers.">Un socio de distribución que ya cumple.</h2>
+        <div class="mods">
+          <div class="mod"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.2 8.2-7 10-3.8-1.8-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span><h3 data-en="Proven track record">Trayectoria comprobada</h3><p data-en="Exclusive Lucas Oil distributor since 2014, with three more brands in our portfolio.">Distribuidor exclusivo de Lucas Oil desde 2014, con tres marcas más en el portafolio.</p></div>
+          <div class="mod"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 15h12V6H2zM14 9h4l4 4v2h-8"/><circle cx="6" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg></span><h3 data-en="Our own delivery">Entrega propia</h3><p data-en="Our own fleet, so we control delivery times and service quality.">Flota propia para controlar los tiempos y la calidad del servicio.</p></div>
+          <div class="mod"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0116 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/></svg></span><h3 data-en="Personal attention">Atención personalizada</h3><p data-en="Fast response for shops, stores and fleets.">Respuesta rápida para talleres, tiendas y flotas.</p></div>
+          <div class="mod"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9-5 9 5-9 5-9-5zM3 8v8l9 5 9-5V8M12 13v8"/></svg></span><h3 data-en="Controlled inventory">Inventario controlado</h3><p data-en="Order and stock control to keep availability reliable.">Control de pedidos y existencias para mantener la disponibilidad.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTOCROSS -->
+  <section class="race pad">
+    <div class="in race-in">
+      <div>
+        <p class="kick"><em>06</em><span data-en="Official sponsor: Lucas Oil">Patrocinador oficial: Lucas Oil</span></p>
+        <h2>Autocross Panamá</h2>
+        <p class="lead" data-en="Lucas Oil, the brand we distribute, is the official sponsor of Autocross Panamá 2026.">Lucas Oil, la marca que distribuimos, es patrocinador oficial del Autocross Panamá 2026.</p>
+        <div class="race-yr" aria-hidden="true">2026</div>
+      </div>
+      <figure class="photo"><img src="img/autocross-main.jpg" alt="Jeep patrocinado por Lucas Oil en el Autocross Panamá 2026" loading="lazy"><figcaption>Autocross Panamá 2026</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- GALERÍA AUTOCROSS -->
+  <section class="gal-sec" aria-label="Autocross y eventos">
+    <div class="in gal">
+      <figure class="photo"><img src="img/autocross-1.jpg" alt="Jeep del Autocross en pista" loading="lazy"></figure>
+      <figure class="photo"><img src="img/autocross-2.jpg" alt="Jeep saliendo del barro" loading="lazy"></figure>
+      <figure class="photo"><img src="img/stand-1.jpg" alt="Stand de Lucas Oil en el evento" loading="lazy"></figure>
+      <figure class="photo"><img src="img/stand-2.jpg" alt="Equipo de Lucas Oil con asistentes al evento" loading="lazy" style="object-position:50% 40%"></figure>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="pad">
+    <div class="in contact">
+      <div>
+        <p class="kick"><em>07</em><span data-en="Contact">Contacto</span></p>
+        <h2 data-en="Want your brand on Panama’s shelves?">¿Quieres tu marca en los estantes de Panamá?</h2>
+        <p class="lead" data-en="Tell us about your brand and products. We will reply with how we can distribute them across Panama.">Cuéntanos de tu marca y tus productos. Te respondemos cómo podemos distribuirlos en todo Panamá.</p>
+        <div class="cta"><a class="btn gold wa" href="https://wa.me/50768611905" target="_blank" rel="noopener" data-en="Write us on WhatsApp">Escríbenos por WhatsApp</a></div>
+      </div>
+      <div class="card">
+        <div class="row"><span class="k">WhatsApp</span><span class="v" id="v-wa">+507 6861-1905</span><button type="button" data-copy="+507 6861-1905" data-target="v-wa" data-en="Copy">Copiar</button></div>
+        <div class="row"><span class="k" data-en="Email">Correo</span><span class="v" id="v-mail">info@poweroilpanama.com</span><button type="button" data-copy="info@poweroilpanama.com" data-target="v-mail" data-en="Copy">Copiar</button></div>
+        <div class="row"><span class="k" data-en="Address">Dirección</span><span class="v" data-en="Costa Marina, local 01, Atalaya, Veraguas, Panama">Costa Marina, local 01, Atalaya, Veraguas, Panamá</span><span></span></div>
+        <div class="row"><span class="k">Instagram</span><span class="v"><a href="https://www.instagram.com/poweroilpanama" target="_blank" rel="noopener">@poweroilpanama</a></span><span></span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="in foot"><span>© Power Oil Panamá</span><span data-en="Exclusive Lucas Oil distributor · Sales to businesses nationwide">Distribuidor exclusivo de Lucas Oil · Venta a negocios en todo el país</span></div>
+</footer>
+
+<script>
+(function () {
+  var MSG = { es: 'Hola, represento una marca y me interesa distribuirla en Panamá.', en: 'Hello, I represent a brand and I am interested in distributing it in Panama.' };
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = [].slice.call(document.querySelectorAll('[data-en]'));
+  els.forEach(function (e) { e.setAttribute('data-es', e.textContent); });
+  var lang = 'es';
+
+  function stored() { try { return localStorage.getItem('po-lang'); } catch (e) { return null; } }
+  function save(l) { try { localStorage.setItem('po-lang', l); } catch (e) {} }
+  function detect() {
+    var s = stored();
+    if (s === 'es' || s === 'en') return s;
+    var n = (navigator.languages && navigator.languages[0]) || navigator.language || 'es';
+    return /^es/i.test(n) ? 'es' : 'en';
+  }
+  function apply(l) {
+    lang = l;
+    document.documentElement.lang = l;
+    els.forEach(function (e) { e.textContent = e.getAttribute('data-' + l); });
+    [].forEach.call(document.querySelectorAll('.lang button'), function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-lang') === l ? 'true' : 'false');
+    });
+    [].forEach.call(document.querySelectorAll('a.wa'), function (a) {
+      a.setAttribute('href', 'https://wa.me/50768611905?text=' + encodeURIComponent(MSG[l]));
+    });
+  }
+  [].forEach.call(document.querySelectorAll('.lang button'), function (b) {
+    b.addEventListener('click', function () { var l = b.getAttribute('data-lang'); save(l); apply(l); });
+  });
+
+  [].forEach.call(document.querySelectorAll('button[data-copy]'), function (btn) {
+    btn.addEventListener('click', function () {
+      function done(ok) {
+        btn.textContent = ok ? (lang === 'es' ? 'Copiado' : 'Copied') : (lang === 'es' ? 'Selecciónalo' : 'Select it');
+        setTimeout(function () { btn.textContent = btn.getAttribute('data-' + lang); }, 1600);
+      }
+      function fallback() {
+        var el = document.getElementById(btn.getAttribute('data-target'));
+        if (el && window.getSelection) {
+          var r = document.createRange(); r.selectNodeContents(el);
+          var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        }
+        done(false);
+      }
+      try { navigator.clipboard.writeText(btn.getAttribute('data-copy')).then(function () { done(true); }, fallback); }
+      catch (e) { fallback(); }
+    });
+  });
+
+  var counters = [].slice.call(document.querySelectorAll('[data-count]'));
+  function runCount(el) {
+    var to = Number(el.getAttribute('data-count')), start = null;
+    function f(ts) {
+      if (start === null) start = ts;
+      var p = Math.min(1, (ts - start) / 1400), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(to * e);
+      if (p < 1) requestAnimationFrame(f);
+    }
+    requestAnimationFrame(f);
+  }
+  if (!reduce && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (en) {
+      en.forEach(function (x) { if (x.isIntersecting) { runCount(x.target); io.unobserve(x.target); } });
+    }, { threshold: 0.6 });
+    counters.forEach(function (c) { io.observe(c); });
+  }
+
+  apply(detect());
+})();
+</script>
+
+</body></html>
